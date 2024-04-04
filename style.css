@@ -30,7 +30,7 @@ body {
 
 :root {
   --text-primary: #000;
-  --text-secondary: #52bedc;
+  --text-secondary: #777;
   --bg-body: #fff;
   --white-text: #fff;
   --bg-item: #000;
@@ -63,6 +63,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 120px;
 }
 @media (min-width: 500px) {
   .header {
@@ -184,4 +185,35 @@ body {
     font-size: 24px;
     width: 290px;
   }
+}
+
+.info__title {
+  font-weight: 400;
+  font-size: 30px;
+  font-family: "Archangelsk";
+  margin-bottom: 25px;
+}
+.info__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.text-blue {
+  font-weight: 700;
+  color: var(--blue-text);
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.images img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

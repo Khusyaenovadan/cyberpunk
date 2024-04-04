@@ -29,7 +29,7 @@ body {
 }
 :root {
   --text-primary: #000;
-  --text-secondary: #52bedc;
+  --text-secondary: #777;
   --bg-body: #fff;
   --white-text: #fff;
   --bg-item: #000;
@@ -46,10 +46,10 @@ body {
   margin: 0 auto;
   padding: 0 12px;
 
-  @media (min-width:1020px) {
+  @media (min-width: 1020px) {
     padding: 0 100px;
     width: 60%;
-    max-width:1920px ;
+    max-width: 1920px;
   }
 }
 .header {
@@ -60,7 +60,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  margin-bottom: 120px;
   @media (min-width: 500px) {
     background-image: url(img2.jpg);
   }
@@ -164,5 +164,35 @@ body {
       font-size: 24px;
       width: 290px;
     }
+  }
+}
+.info {
+  &__title {
+    font-weight: 400;
+    font-size: 30px;
+    font-family: "Archangelsk";
+    margin-bottom: 25px;
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+  }
+}
+.text-blue {
+  font-weight: 700;
+  color: var(--blue-text);
+}
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  
+  & img {
+    object-fit: cover;
+    width: 100%;
   }
 }
