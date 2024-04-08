@@ -137,6 +137,11 @@ body {
     width: 100%;
     margin-right: 36px;
     margin-bottom: 0;
+    @media(min-width:1920){
+      margin-right: 25%;
+      margin-left: auto;
+
+    }
   }
 
   &__title {
@@ -149,6 +154,7 @@ body {
     @media (min-width: 780px) {
       font-size: 62px;
       width: 290px;
+     
     }
   }
   &__btn {
@@ -172,6 +178,13 @@ body {
     font-size: 30px;
     font-family: "Archangelsk";
     margin-bottom: 25px;
+    @media (min-width: 500px) {
+      font-size: 62px;
+    }
+    @media (min-width: 1280px) {
+      max-width: 620px;
+      margin-left: 320px;
+    }
   }
   &__desc {
     font-weight: 400;
@@ -179,6 +192,14 @@ body {
     line-height: 200%;
     color: var(--text-secondary);
     margin-bottom: 20px;
+    @media (min-width: 500px) {
+      font-size: 18px;
+    }
+    @media (min-width: 1280px) {
+      max-width: 1000px;
+      margin-left: 320px;
+
+    }
   }
 }
 .text-blue {
@@ -190,9 +211,32 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  
+
   & img {
     object-fit: cover;
     width: 100%;
   }
+
+  @media (min-width: 500px) {
+    padding: 0 36px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "img1 img2"
+      "img3 img3";
+  }
+  @media (min-width: 1024px) {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.image-1 {
+  grid-area: img1;
+}
+.image-2 {
+  grid-area: img2;
+}
+.image-3 {
+  grid-area: img3;
 }
