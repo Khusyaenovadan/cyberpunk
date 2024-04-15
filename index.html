@@ -11,31 +11,31 @@
             <div class="container">
                 <nav class="nav">
                     <a href="./index.html"><img class="nav__logo"
-                            src="./logo.svg" alt="logo">
+                            src="./logo/logo.svg" alt="logo">
                     </a>
                     <div class="nav__links">
                         <a href="nav__link" href="#">
-                            <img class="nav__icon" src="./youtube.svg"
+                            <img class="nav__icon" src="./logo/youtube.svg"
                                 alt="иконка youtube ">
                         </a>
                         <a class="nav__link" href="#">
-                            <img class="nav__icon" src="./vk.svg"
+                            <img class="nav__icon" src="./logo/vk.svg"
                                 alt="иконка vk">
                         </a>
                         <a class="nav__link" href="#">
-                            <img class="nav__icon" src="./facebook1.svg"
+                            <img class="nav__icon" src="./logo/facebook1.svg"
                                 alt="иконка facebook ">
                         </a>
                         <a class="nav__link" href="#">
-                            <img class="nav__icon" src="./twitter1.svg"
+                            <img class="nav__icon" src="./logo/twitter1.svg"
                                 alt="иконка twitter ">
                         </a>
                         <a class="nav__link" href="#">
-                            <img class="nav__icon" src="./twitch.svg"
+                            <img class="nav__icon" src="./logo/twitch.svg"
                                 alt="иконка twitch">
                         </a>
                         <a class="nav__link" href="#">
-                            <img class="nav__icon" src="./instagram.svg"
+                            <img class="nav__icon" src="./logo/instagram.svg"
                                 alt="иконка instagram">
                         </a>
 
@@ -71,31 +71,70 @@
 
                     <picture class="image-1">
                         <source media="(min-width: 768px)"
-                            srcset="./infotablet1.png">
+                            srcset="./images/infotablet1.png">
                         <source media="(min-width: 400px)"
-                            srcset="./infotelephon1.jpg">
-                        <img src="infotelephon1.jpg" alt="img">
+                            srcset="./images/infotelephon1.jpg">
+                        <img src="./images/infotelephon1.jpg" alt="img">
                     </picture>
 
                     <picture class="image-2">
                         <source media="(min-width: 768px)"
-                            srcset="./infotablet2.png">
+                            srcset="./images/infotablet2.png">
                         <source media="(min-width: 400px)"
-                            srcset="./infotelephon2.jpg">
-                        <img src="infotelephon2.jpg" alt="img">
+                            srcset="./images/infotelephon2.jpg">
+                        <img src="./images/infotelephon2.jpg" alt="img">
                     </picture>
 
                     <picture class="image-3">
                         <source media="(min-width: 1024px)"
-                            srcset="./infocomputer3.png">
+                            srcset="./images/infocomputer3.png">
                         <source media="(min-width: 768px)"
-                            srcset="./infotablet3.png">
+                            srcset="./images/infotablet3.png">
                         <source media="(min-width: 400px)"
-                            srcset="./infotelephon3.jpg">
-                        <img src="infotelephon3.jpg" alt="img">
+                            srcset="./images/infotelephon3.jpg">
+                        <img src="./images/infotelephon3.jpg" alt="img">
 
                     </picture>
 
+                </div>
+            </section>
+            <section class="form">
+                <div class="container">
+
+                    <img src="./images/gamesphone1.png" alt="img"
+                        class="form-image1">
+                    <img src="./images/gamesphone2.png" alt="img"
+                        class="form-image1">
+                    <div class="wraper">
+                        <div class="form-images">
+
+                        </div>
+                        <div class="form-desc">
+                            <h3 class="form__title">Играй и выигрывай!</h3>
+                            <p class="form__description">Играй в<span
+                                    class="text-blue">Cyberpunk 2077</span> и
+                                получи возможность выиграть консоль <span
+                                    class="text-blue">Xbox Series X</span>
+                                или <span class="text-blue">Sony PlayStation
+                                    5!</span> Заполни форму ниже и приложи
+                                скриншот о покупке игры. Итоги розыгрыша
+                                будут
+                                подведены 1 февраля. Удачи! ;)</p>
+                        </div>
+                        <form action method="post">
+                            <label for="name"></label>
+                            <input id="name" class="input" type="text" name="name" required placeholder="Как тебя зовут?">
+                            <label for="name"></label>
+                            <input id="email" class="input" type="text" name="email" required placeholder="Твой е-mail">
+                            <label class="label-file" for="file">Прикрепить скриншот</label>
+                            <input type="text" id="file" class="file" >
+                            <button class="form-btn">Отправить</button>
+                            <input class="checkbox" id="checkbox" type="checkbox">
+                            <label for="checkbox" class="label-checkbox">Согласен на обработку персональных данных</label>
+                          
+                        </form>
+
+                    </div>
                 </div>
             </section>
         </main>
