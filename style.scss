@@ -6,27 +6,27 @@
   box-sizing: border-box;
 }
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto-light'),
-    url('../fonts/Roboto-Light.ttf') format('truetype');
+  font-family: "Roboto";
+  src: local("Roboto-light"),
+    url("../fonts/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto-Regular'),
-    url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-family: "Roboto";
+  src: local("Roboto-Regular"),
+    url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Archangelsk';
-  src: local('Archangelsk'), url('../fonts/Archangelsk.ttf') format('truetype');
+  font-family: "Archangelsk";
+  src: local("Archangelsk"), url("../fonts/Archangelsk.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 :root {
   --text-primary: #000;
@@ -145,7 +145,7 @@ body {
   }
 
   &__title {
-    font-family: 'Archangelsk';
+    font-family: "Archangelsk";
     font-weight: 400;
     font-size: 30px;
     text-align: center;
@@ -172,7 +172,6 @@ body {
   }
 }
 
-
 .info {
   margin-bottom: 120px;
 
@@ -180,7 +179,7 @@ body {
     font-weight: 400;
     font-size: 30px;
     color: var(--text-primary);
-    font-family: 'Archangelsk';
+    font-family: "Archangelsk";
     margin-bottom: 25px;
 
     @media (min-width: 500px) {
@@ -232,8 +231,8 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      'img1 img2'
-      'img3 img3';
+      "img1 img2"
+      "img3 img3";
   }
 
   @media (min-width: 1024px) {
@@ -259,7 +258,7 @@ body {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -55px;
     left: 0;
@@ -272,7 +271,7 @@ body {
     background-size: cover;
   }
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -80px;
     left: 0;
@@ -290,6 +289,14 @@ body {
     font-size: 30px;
     color: #fff;
     margin-bottom: 25px;
+    @media (min-width: 780px) {
+      font-size: 62px;
+      margin-top: 50PX;
+    }
+    @media(min-width: 1280){
+      width: 600px;
+      padding-left: 150PX;
+    }
   }
   &__description {
     font-weight: 400;
@@ -298,18 +305,37 @@ body {
     color: #fff;
     margin-bottom: 70px;
   }
+  @media (min-width: 780px) {
+    font-size: 18px;
+  }
 }
 .form-images {
   margin-top: 25px;
-  @media(min-width:768px){
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
+    margin-right: -50px;
   }
+  @media(min-width: 1280px){
+    flex-direction: row;
+    margin-top: 50px;
+    margin-right: 0;
+    margin-left:-100px;
+
+  }
+
 }
+.pic1{
+@media(min-width:1280px){
+  margin-right: -100px;
+  z-index: 10;
+}
+}
+
+
 .form {
   margin-top: 50px;
   padding-bottom: 30px;
-
 }
 label {
   color: #fff;
@@ -381,7 +407,7 @@ label {
   position: relative;
 }
 .checkbox + label::before {
-  content: '';
+  content: "";
   display: block;
   border: 1px solid #777;
   width: 14px;
@@ -391,7 +417,7 @@ label {
   top: -1px;
 }
 .checkbox:checked + label::after {
-  content: '';
+  content: "";
   display: block;
   background-image: url(../images/tick.svg);
   background-position: center;
@@ -402,10 +428,10 @@ label {
   left: -19px;
   top: 1px;
 }
-.wraper{
+.wraper {
   margin-top: 25px;
   position: relative;
-  @media(min-width: 768px){
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -413,27 +439,31 @@ label {
   }
 }
 
-.sale{
-background-image: url(../images/sale.svg);
-background-repeat: no-repeat;
-background-size: cover;
-width: 62px;
-height: 62px; 
-position: absolute;
-top: -50px;
-left: 0;
-
-@media(min-width:1024px){
-  width: 132px;
-  height: 132px;
-  left: 30%;
+.sale {
+  background-image: url(../images/sale.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 62px;
+  height: 62px;
+  position: absolute;
   top: -50px;
+  left: 0;
 
-
+  @media (min-width: 768px) {
+    width: 132px;
+    height: 132px;
+    left: 0%;
+    top: -75px;
+  }
+  @media(min-width: 1780px){
+    left: 9%;
+    top:-70px;
+    width: 132px;
+    height: 132px;
+  }
 }
-}
-.form-desc{
-  @media(min-width: 768px){
-max-width: 460px;
+.form-desc {
+  @media (min-width: 768px) {
+    max-width: 460px;
   }
 }

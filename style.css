@@ -8,19 +8,19 @@
 
 @font-face {
   font-family: "Roboto";
-  src: local("Roboto-light"), url("./fonts/Roboto-Light.ttf") format("truetype");
+  src: local("Roboto-light"), url("../fonts/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: local("Roboto-Regular"), url("./fonts/Roboto-Regular.ttf") format("truetype");
+  src: local("Roboto-Regular"), url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Archangelsk";
-  src: local("Archangelsk"), url("./fonts/Archangelsk.ttf") format("truetype");
+  src: local("Archangelsk"), url("../fonts/Archangelsk.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
 }
@@ -55,7 +55,7 @@ body {
 }
 
 .header {
-  background-image: url(./images/img1.jpg);
+  background-image: url(../images/img1.jpg);
   min-height: 750px;
   background-position: center;
   background-size: cover;
@@ -66,12 +66,12 @@ body {
 }
 @media (min-width: 500px) {
   .header {
-    background-image: url(./images/img2.jpg);
+    background-image: url(../images/img2.jpg);
   }
 }
 @media (min-width: 780px) {
   .header {
-    background-image: url(./images/img3.jpg);
+    background-image: url(../images/img3.jpg);
     min-height: 1000px;
   }
 }
@@ -288,7 +288,7 @@ body {
   display: block;
   width: 100%;
   height: 70px;
-  background-image: url(./images/formtop.jpg);
+  background-image: url(../images/formtop.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -301,7 +301,7 @@ body {
   display: block;
   width: 100%;
   height: 70px;
-  background-image: url(./images/formbot.jpg);
+  background-image: url(../images/formbot.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -313,6 +313,18 @@ body {
   color: #fff;
   margin-bottom: 25px;
 }
+@media (min-width: 780px) {
+  .form__title {
+    font-size: 62px;
+    margin-top: 50PX;
+  }
+}
+@media (min-width: 1280) {
+  .form__title {
+    width: 600px;
+    padding-left: 150PX;
+  }
+}
 .form__description {
   font-weight: 400;
   font-size: 16px;
@@ -320,9 +332,36 @@ body {
   color: #fff;
   margin-bottom: 70px;
 }
+@media (min-width: 780px) {
+  .form {
+    font-size: 18px;
+  }
+}
 
-.form-image {
+.form-images {
   margin-top: 25px;
+}
+@media (min-width: 768px) {
+  .form-images {
+    display: flex;
+    flex-direction: column;
+    margin-right: -50px;
+  }
+}
+@media (min-width: 1280px) {
+  .form-images {
+    flex-direction: row;
+    margin-top: 50px;
+    margin-right: 0;
+    margin-left: -100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .pic1 {
+    margin-right: -100px;
+    z-index: 10;
+  }
 }
 
 .form {
@@ -359,10 +398,20 @@ label {
   font-weight: 300;
 }
 
+.checkbox {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  z-index: -1;
+  margin-left: -1000px;
+}
+
 .file {
   width: 1px;
   height: 1px;
-  position: -1;
+  position: absolute;
+  z-index: -1;
+  margin-left: -1000px;
 }
 
 .label-file {
@@ -402,6 +451,7 @@ label {
   font-weight: 300;
   font-size: 12px;
   color: #fff;
+  position: relative;
 }
 
 .checkbox + label::before {
@@ -418,7 +468,7 @@ label {
 .checkbox:checked + label::after {
   content: "";
   display: block;
-  background-image: url(./images/tick.svg);
+  background-image: url(../images/tick.svg);
   background-position: center;
   background-size: cover;
   width: 9px;
@@ -426,4 +476,50 @@ label {
   position: absolute;
   left: -19px;
   top: 1px;
+}
+
+.wraper {
+  margin-top: 25px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .wraper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.sale {
+  background-image: url(../images/sale.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 62px;
+  height: 62px;
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+@media (min-width: 768px) {
+  .sale {
+    width: 132px;
+    height: 132px;
+    left: 0%;
+    top: -75px;
+  }
+}
+@media (min-width: 1780px) {
+  .sale {
+    left: 9%;
+    top: -70px;
+    width: 132px;
+    height: 132px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-desc {
+    max-width: 460px;
+  }
 }/*# sourceMappingURL=style.css.map */
