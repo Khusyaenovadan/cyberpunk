@@ -524,7 +524,7 @@ label {
     & img:nth-child(1) {
       width: 44px;
       height: 44px;
-      @media(min-width:780){
+      @media (min-width: 780) {
         width: 80px;
         height: 80px;
       }
@@ -532,7 +532,7 @@ label {
     & img:nth-child(2) {
       width: 60px;
       height: 15px;
-      @media(min-width:780){
+      @media (min-width: 780) {
         width: 90px;
         height: 20px;
       }
@@ -540,7 +540,7 @@ label {
     & img:nth-child(3) {
       width: 176px;
       height: 44px;
-      @media(min-width:780){
+      @media (min-width: 780) {
         width: 320px;
         height: 80px;
       }
@@ -587,20 +587,116 @@ label {
     align-items: center;
     flex-direction: row;
   }
-  @media(min-width: 780px){
-    max-width:1280px;
+  @media (min-width: 780px) {
+    max-width: 1280px;
     justify-content: space-between;
     margin: 0 auto;
-    align-items:flex-start;
+    align-items: flex-start;
   }
 }
 .display__icons {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   gap: 25px;
-  justify-content:space-between;
-  @media(min-width: 1025px){
-    flex-direction:row;
+  justify-content: space-between;
+  @media (min-width: 1025px) {
+    flex-direction: row;
+  }
+}
+.buy {
+  &-bg {
+    min-height: 200px;
+    width: 100%;
+    background-image: url(./images/buy-phone.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 40px;
+    @media (min-width: 780px) {
+      background-image: url(./images/buy-tablet.jpg);
+      height: 717px;
+      width: 332px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 780px) {
+      background-image: url(./images/buy-computer.jpg);
+      max-width: 944px;
+      width: 100%;
+    }
+  }
+  &-wrapper {
+    background-color: #000;
+    padding-bottom: 70px;
+    @media (min-width: 780px) {
+      display: flex;
+      padding-bottom: 0;
+    }
+  }
+  &-about {
+    padding: 0 12px;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+    font-family: Archangelsk;
+    margin-bottom: 30px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+  }
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: -30px;
+    }
+  }
+  .disk::before {
+    background-image: url(./logo/disk.svg);
+  }
+  .vector::before {
+    background-image: url(./logo/vector.svg);
+  }
+  .images::before {
+    background-image: url(./logo/image.svg);
+  }
+}
+.buy__desc {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #52bedc;
+}
+.buy__icons {
+  padding: 0 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 56px;
+  row-gap: 48px;
+}
+.buy-wrapper2 {
+  @media (min-width: 780px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
 }
